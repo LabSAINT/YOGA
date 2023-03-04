@@ -13,8 +13,10 @@ We introduce YOGA, a deep learning based yet lightweight object detection model 
   title={YOGA: Deep Object Detection in the Wild with Lightweight Feature Learning and Multiscale Attention},
   author={Sunkara, Raja and Luo, Tie},
   journal={Pattern Recognition},
+  volume={139},
   pages={109451},
   year={2023},
-  publisher={Elsevier}
+  publisher={Elsevier},
+  doi= {10.1016/j.patcog.2023.109451},
 }
 ```
