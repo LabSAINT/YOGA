@@ -1,5 +1,9 @@
 ** Code and scripts to be uploaded soon. **
 
+[Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)
+
+[Full text](https://authors.elsevier.com/a/1ghEz77nKkWoi) (accessible until April 22, 2023 only)
+
 ## YOGA: Deep Object Detection in the Wild with Lightweight Feature Learning and Multiscale Attention
 
 ### Abstract
