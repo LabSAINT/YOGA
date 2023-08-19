@@ -56,7 +56,7 @@ A solution has been provided in the YOLOv5 GitHub repository.
 
 **Details of the Issue:** 
 - **Error:** `AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'`
-- **Resolution:** Amend the line containing `recompute_scale_factor=self.recompute_scale_factor`.
+- **Resolution:** Amend the line containing `recompute_scale_factor=self.recompute_scale_factor` in `E:\condaaa\lib\site-packages\torch\nn\modules\upsampling.py` file.
 
 For a detailed discussion and context, please refer to this [GitHub issue comment](https://github.com/ultralytics/yolov5/issues/6948#issuecomment-1075528897).
 
