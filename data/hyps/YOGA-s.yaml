@@ -1,0 +1,33 @@
+# Hyperparameters for COCO training from scratch
+# python train.py --batch 40 --cfg yolov5m.yaml --weights '' --data coco.yaml --img 640 --epochs 300
+# See tutorials for hyperparameter evolution https://github.com/ultralytics/yolov5#tutorials
+
+lr0: 0.01  # initial learning rate (SGD=1E-2, Adam=1E-3) d
+lrf: 0.2  # final OneCycleLR learning rate (lr0 * lrf) d
+momentum: 0.937  # SGD momentum/Adam beta1 d
+weight_decay: 0.0005  # optimizer weight decay 5e-4 d
+warmup_epochs: 3.0  # warmup epochs (fractions ok) d
+warmup_momentum: 0.8  # warmup initial momentum d
+warmup_bias_lr: 0.1  # warmup initial bias lr d
+box: 0.05  # box loss gain d
+cls: 0.5  # cls loss gain d
+cls_pw: 1.0  # cls BCELoss positive_weight d
+obj: 1.0  # obj loss gain (scale with pixels) d
+obj_pw: 1.0  # obj BCELoss positive_weight d
+iou_t: 0.20  # IoU training threshold d
+anchor_t: 4.0  # anchor-multiple threshold d
+# anchors: 3  # anchors per output layer (0 to ignore)
+fl_gamma: 0.0  # focal loss gamma (efficientDet default gamma=1.5) d
+hsv_h: 0.015  # image HSV-Hue augmentation (fraction) d
+hsv_s: 0.7  # image HSV-Saturation augmentation (fraction) d
+hsv_v: 0.4  # image HSV-Value augmentation (fraction) d
+degrees: 0.0  # image rotation (+/- deg) d
+translate: 0.1  # image translation (+/- fraction) d
+scale: 0.5  # image scale (+/- gain) d
+shear: 0.0  # image shear (+/- deg) d
+perspective: 0.0  # image perspective (+/- fraction), range 0-0.001 d
+flipud: 0.0  # image flip up-down (probability) d
+fliplr: 0.5  # image flip left-right (probability) d
+mosaic: 1.0  # image mosaic (probability) d
+mixup: 0.0  # image mixup (probability) d
+copy_paste: 0.0  # segment copy-paste (probability) d
