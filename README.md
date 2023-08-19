@@ -1,6 +1,6 @@
 ** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
 
-[Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)
+[Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)<br>
 [arXiv](https://arxiv.org/abs/2307.05945)
 
 ## YOGA: Deep Object Detection in the Wild with Lightweight Feature Learning and Multiscale Attention
