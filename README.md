@@ -78,6 +78,7 @@ The script `val.py` can be used to evaluate the pre-trained models
 
 ##### Training 
 
+The script train.py is used to train YOGA models
 
 ```
 # nano model
