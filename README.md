@@ -30,6 +30,9 @@ We introduce YOGA, a deep learning based yet lightweight object detection model 
 
 ### YOGA Building Block:
 
+![losses](https://github.com/pavanraja753/pictures/blob/22d14c2045d99a239a0e544a08de93357b9816cb/spd.png?raw=true)
+
+
 
 ### Installation
 
