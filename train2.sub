@@ -1,15 +1,14 @@
 #!/bin/bash
-#SBATCH --job-name=Experiment1_COCO # Yolov5s model  #SBATCH -p cuda 
+#SBATCH --job-name=Experiment1_COCO # Yolov5s model   #SBATCH -p cuda 
 #SBATCH --nodes=1                # node count 
 #SBATCH --ntasks-per-node=4
 #SBATCH --exclusive
-#SBATCH --mem=120GB                 # total memory per node (4 GB per cpu-core is default)
-#SBATCH --gres=gpu:1           # number of gpus per node
-#SBATCH --time=1:05:00          # total run time limit (HH:MM:SS)
+#SBATCH --mem=120GB                 # total memory per node (4 GB per cpu-core is default)  #SBATCH --gres=gpu:1           # number of gpus per node
+#SBATCH --time=3:05:00          # total run time limit (HH:MM:SS)
 
 nvidia-smi
 
-#python val.py --weights 'pth_models/YOGA-n.pt' --img 640 --iou 0.65 --half --batch-size 1 --data data/coco.yaml
+python val.py --weights 'pth_models/YOGA-m.pt' --img 640 --iou 0.65 --half --batch-size 1 --data data/coco.yaml --task val
 
 
-python3 train.py --data coco.yaml --cfg ./models/YOGA-n.yaml --hyp ./data/hyps/YOGA-n.yaml --weights '' --batch-size 128 --epochs 300 --sync-bn --project YOGA --name YOGA-n --label-smoothing 0.01
+#python3 train.py --data coco.yaml --cfg ./models/YOGA-n.yaml --hyp ./data/hyps/YOGA-n.yaml --weights '' --batch-size 128 --epochs 300 --sync-bn --project YOGA --name YOGA-n --label-smoothing 0.01
