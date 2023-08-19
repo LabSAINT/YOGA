@@ -47,8 +47,19 @@ conda activate YOGA
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip3 install -r requirements.txt
 
-# note will be added to handle Upsampling.py file 
 ```
+
+### AttributeError Issue Resolution
+
+If you encounter the error: AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'
+A solution has been provided in the YOLOv5 GitHub repository. 
+
+**Details of the Issue:** 
+- **Error:** `AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'`
+- **Resolution:** Amend the line containing `recompute_scale_factor=self.recompute_scale_factor`.
+
+For a detailed discussion and context, please refer to this [GitHub issue comment](https://github.com/ultralytics/yolov5/issues/6948#issuecomment-1075528897).
+
 
 
 ### YOGA
