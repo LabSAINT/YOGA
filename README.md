@@ -53,7 +53,7 @@ pip3 install -r requirements.txt
 
 ### YOGA
 
-YOGA is trained and evaluated on evaluated using COCO-2017 dataset. Below are the pretrained models and training scripts.
+YOGA has been trained and evaluated using the COCO-2017 dataset. Below are the pretrained models, evaluation, and training scripts
 
 
 ##### Pre-trained models
