@@ -63,7 +63,7 @@ The table below gives an overview of the results of our models
 |  [YOGA-n](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) |  32.3 | 15.2 | 1.9   | 4.9|
 |  [YOGA-s](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) | 40.7 | 23.0 | 7.6 |  16.6  |
 |  [YOGA-m](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) | 45.2|28.0|16.3|34.6
-|  [YOGA-l] | 48.9|31.8|33.6|71.8
+|  YOGA-l | 48.9|31.8|33.6|71.8
 
 
 ##### Evaluation
