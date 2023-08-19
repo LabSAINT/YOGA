@@ -1,4 +1,4 @@
-** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
+** Source code and evaluation scripts for our Pattern Recognition (journal) 2023 paper. **
 
 [Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)<br>
 [arXiv](https://arxiv.org/abs/2307.05945)
