@@ -1,6 +1,6 @@
-** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
+** Source code and evaluation scripts for our Pattern Recognition (journal) 2023 paper. **
 
-[Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)
+[Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)<br>
 [arXiv](https://arxiv.org/abs/2307.05945)
 
 ## YOGA: Deep Object Detection in the Wild with Lightweight Feature Learning and Multiscale Attention
@@ -30,6 +30,9 @@ We introduce YOGA, a deep learning based yet lightweight object detection model 
 
 ### YOGA Building Block:
 
+![losses](https://github.com/raja-sunkara/pictures/blob/main/YOGA-1.png)
+
+
 
 ### Installation
 
@@ -44,13 +47,24 @@ conda activate YOGA
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip3 install -r requirements.txt
 
-# note will be added to handle Upsampling.py file 
 ```
+
+### AttributeError Issue Resolution
+
+If you encounter the error: AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'
+A solution has been provided in the YOLOv5 GitHub repository. 
+
+**Details of the Issue:** 
+- **Error:** `AttributeError: 'Upsample' object has no attribute 'recompute_scale_factor'`
+- **Resolution:** Amend the line containing `recompute_scale_factor=self.recompute_scale_factor` in `E:\condaaa\lib\site-packages\torch\nn\modules\upsampling.py` file.
+
+For a detailed discussion and context, please refer to this [GitHub issue comment](https://github.com/ultralytics/yolov5/issues/6948#issuecomment-1075528897).
+
 
 
 ### YOGA
 
-YOGA is trained and evaluated on evaluated using COCO-2017 dataset. Below are the pretrained models and training scripts.
+YOGA has been trained and evaluated using the COCO-2017 dataset. Below are the pretrained models, evaluation, and training scripts
 
 
 ##### Pre-trained models
@@ -60,10 +74,10 @@ The table below gives an overview of the results of our models
 
 | $$\textbf{Model}$$ | $$\textbf{AP}$$ | $$\textbf{AP}_\textbf{S}$$ |  $$\textbf{Params (M)}$$ | $$\textbf{FLOPs (B)}$$ |
 |----	|:-:|:-:|:-:|:-:|
-|  [YOGA-n](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) |  32.3 | 15.2 | 1.9   | 4.9|
-|  [YOGA-s](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) | 40.7 | 23.0 | 7.6 |  16.6  |
-|  [YOGA-m](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) | 45.2|28.0|16.3|34.6
-|  [YOGA-l](https://drive.google.com/drive/folders/1RqI5JELROohhxRen78W3hG6N9MMRD-6K?usp=sharing) | 48.9|31.8|33.6|71.8
+|  [YOGA-n](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) |  32.3 | 15.2 | 1.9   | 4.9|
+|  [YOGA-s](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) | 40.7 | 23.0 | 7.6 |  16.6  |
+|  [YOGA-m](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) | 45.2|28.0|16.3|34.6
+|  [YOGA-l](https://drive.google.com/drive/u/2/folders/1K2rKYY9p3wmA6-rN0Jx8g_6pBazyGZjO) | 48.9|31.8|33.6|71.8
 
 
 ##### Evaluation
@@ -78,6 +92,7 @@ The script `val.py` can be used to evaluate the pre-trained models
 
 ##### Training 
 
+The script train.py is used to train YOGA models
 
 ```
 # nano model
