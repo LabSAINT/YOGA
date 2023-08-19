@@ -1,7 +1,6 @@
 ** Source code and evaluation scripts for our ECML PKDD 2022 paper. **
 
 [Link to paper](https://www.sciencedirect.com/science/article/pii/S0031320323001516)
-[Full text](https://authors.elsevier.com/a/1ghEz77nKkWoi) (accessible until April 22, 2023 only)
 [arXiv](https://arxiv.org/abs/2307.05945)
 
 ## YOGA: Deep Object Detection in the Wild with Lightweight Feature Learning and Multiscale Attention
@@ -45,7 +44,7 @@ conda activate YOGA
 conda install pytorch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 pytorch-cuda=11.7 -c pytorch -c nvidia
 pip3 install -r requirements.txt
 
-# note will be added to handle Upsampling.py file ammending
+# note will be added to handle Upsampling.py file 
 ```
 
 
