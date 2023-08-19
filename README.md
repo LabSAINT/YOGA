@@ -30,7 +30,7 @@ We introduce YOGA, a deep learning based yet lightweight object detection model 
 
 ### YOGA Building Block:
 
-![losses](YOGA.pdf)
+![losses](./YOGA.pdf)
 
 
 
